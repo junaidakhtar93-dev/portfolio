@@ -83,10 +83,10 @@ export const skillGroups: SkillGroup[] = [
 export const projects: Project[] = [
   {
     icon: '📊',
-    year: '2023',
+    year: '2024',
     title: 'SysWatch — IT Monitoring Dashboard',
     description:
-      `A real-time system monitoring dashboard built for Mid-Chain's infrastructure team. Visualises server uptime, ticket resolution rates, network throughput, and alert history across 12 endpoints using interactive Plotly charts.`,
+      `A real-time system monitoring dashboard built for Mid-Chain's infrastructure team. Visualises server uptime, ticket resolution rates, network throughput, and alert history across 5 server endpoints using interactive Plotly charts.`,
     tech: ['Python', 'FastAPI', 'Plotly.js', 'SQLite', 'JavaScript'],
     featured: true,
   },
@@ -101,7 +101,7 @@ export const projects: Project[] = [
   },
   {
     icon: '🎨',
-    year: '2024',
+    year: '2023',
     title: 'Palette Studio — Colour Tool',
     description:
       `An interactive browser-based tool for generating, adjusting, and exporting colour palettes. Includes HSL sliders, contrast ratio checker (WCAG AA/AAA), and one-click CSS variable export. Designed for frontend developers and UI designers.`,
@@ -117,7 +117,7 @@ export const projects: Project[] = [
   },
   {
     icon: '📡',
-    year: '2023',
+    year: '2025',
     title: 'Network Traffic Analyser',
     description:
       `Python tool that parses and visualises network logs collected during routine infrastructure work. Generates traffic heatmaps by hour, flags anomalous bandwidth spikes, and exports weekly PDF summaries for management review.`,
@@ -137,10 +137,10 @@ export const timeline: TimelineEntry[] = [
   {
     role: 'System Support Officer',
     company: 'Mid-Chain Technologies',
-    date: 'Jan 2022 — Mar 2024',
+    date: 'Jan 2024 — Mar 2026',
     points: [
       'Built the SysWatch monitoring dashboard and internal reporting tools used by the operations team',
-      'Maintained 12+ server endpoints, monitoring uptime, network health, and software licences',
+      'Maintained 5 production server endpoints, monitoring uptime, network health, and software licences',
       'Designed documentation and workflow guides that reduced onboarding time for new technical staff',
       'Coordinated vendor relationships, invoice tracking, and IT asset procurement',
       'Produced periodic performance and system reports for senior management',
