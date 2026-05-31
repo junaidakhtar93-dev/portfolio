@@ -108,11 +108,20 @@ export const projects: Project[] = [
     tech: ['JavaScript', 'Canvas API', 'CSS Custom Properties'],
   },
   {
+    icon: '🎙️',
+    year: '2022',
+    title: 'Voice-Activated Home Automation — Final Year Project',
+    description:
+      `BSc CS619 capstone: an Arduino-based system that controls home appliances through spoken commands. An Android voice app converts speech to text and relays it over Bluetooth (HC-05) to an Arduino, which parses the command and switches relays for lights, fans, and other devices.`,
+    tech: ['Arduino', 'C / C++', 'Bluetooth (HC-05)', 'Relay Control'],
+    featured: true,
+  },
+  {
     icon: '🖥️',
     year: '2022',
-    title: 'Final Year Project — Digital Task Manager',
+    title: 'Digital Task Manager',
     description:
-      `CS619 capstone project: a web-based collaborative task management system with role-based access control, email notifications, and a reporting module. Built the full stack — database design, backend API, and frontend UI.`,
+      `A web-based collaborative task management system with role-based access control, email notifications, and a reporting module. Built the full stack — database design, backend API, and frontend UI.`,
     tech: ['PHP', 'MySQL', 'HTML / CSS', 'JavaScript'],
   },
   {
