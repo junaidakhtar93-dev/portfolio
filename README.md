@@ -1,35 +1,51 @@
 # Personal Portfolio
 
-A single-page personal portfolio for **Junaid Akhtar** — Computer Science graduate and systems & web developer. Built from scratch with no frameworks: pure HTML, CSS, and vanilla JavaScript, with a dark theme, smooth-scroll navigation, and fade-in-on-scroll animations.
+A single-page personal portfolio for **Junaid Akhtar** — Computer Science graduate and systems & web developer. Dark theme, smooth-scroll navigation, and fade-in-on-scroll animations, now built as a modern component-based app.
 
 ## Live site
 
-Once GitHub Pages is enabled (Settings → Pages → Deploy from branch → `main` / root), the site is served at:
+Served via GitHub Pages at:
 
 ```
 https://junaidakhtar93-dev.github.io/portfolio/
 ```
 
+Deployment is automated — every push to `main` builds the app and publishes `dist/` to Pages via GitHub Actions (`.github/workflows/deploy.yml`).
+
+## Tech stack
+
+- **Vite** — build tool / dev server
+- **React 18** + **TypeScript** (strict mode)
+- **Tailwind CSS v4** via the `@tailwindcss/vite` plugin
+- Google Fonts (Inter, JetBrains Mono)
+- `IntersectionObserver` for scroll-reveal animations (React hook)
+
 ## Run locally
 
-It's a static page — open `index.html` directly, or serve it:
-
 ```bash
-# Serves the current folder at http://localhost:8000 using Python's built-in static server.
-python3 -m http.server 8000
+# Install dependencies.
+npm install
+
+# Start the dev server (http://localhost:5173).
+npm run dev
+
+# Type-check and produce the production build into dist/.
+npm run build
 ```
 
 ## Structure
 
-- `index.html` — the entire site (markup, styles, and script inlined in one file)
+- `index.html` — Vite entry, loads `/src/main.tsx`
+- `src/main.tsx` — React root
+- `src/App.tsx` — composes all sections
+- `src/components/` — `Nav`, `Hero`, `About`, `Skills`, `Projects`, `Experience`, `Contact`, `Footer`
+- `src/data.ts` — typed content (skills, projects, timeline, etc.)
+- `src/hooks/useScrollEffects.ts` — nav-highlight + fade-in hooks
+- `src/index.css` — Tailwind import plus the ported design styles
 
 ## Sections
 
 About · Skills · Projects · Experience & Education · Contact
-
-## Tech
-
-HTML5 · CSS3 (custom properties, grid, backdrop-filter) · vanilla JavaScript (`IntersectionObserver` for scroll animations) · Google Fonts (Inter, JetBrains Mono)
 
 ## License
 
