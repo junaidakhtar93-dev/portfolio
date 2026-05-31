@@ -126,7 +126,7 @@ export const projects: Project[] = [
   },
   {
     icon: '📡',
-    year: '2025',
+    year: '2024',
     title: 'Network Traffic Analyser',
     description:
       `Python tool that parses and visualises network logs collected during routine infrastructure work. Generates traffic heatmaps by hour, flags anomalous bandwidth spikes, and exports weekly PDF summaries for management review.`,
