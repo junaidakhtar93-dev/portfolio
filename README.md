@@ -2,6 +2,8 @@
 
 A single-page personal portfolio for **Junaid Akhtar** — Computer Science graduate and systems & web developer. Dark theme, smooth-scroll navigation, and fade-in-on-scroll animations, now built as a modern component-based app.
 
+> Originally built in 2023; rebuilt with React + TypeScript in 2026.
+
 ## Live site
 
 Served via GitHub Pages at:
